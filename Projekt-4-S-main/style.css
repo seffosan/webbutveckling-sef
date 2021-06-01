@@ -1,0 +1,325 @@
+@import url("https://css.gg/youtube.css");
+@import url("https://css.gg/instagram.css");
+@import url("https://css.gg/twitter.css");
+@import url("https://css.gg/facebook.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+	font-family: "Chopsic";
+	src: url("Chopsic-K6Dp.ttf") format("woff");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	text-align: left;
+	padding: 15px 0;
+}
+
+main {
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	background-color: black;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.logo {
+	font-family: "Chopsic";
+	font-size: 1.3rem;
+	cursor: pointer;
+	transition: 500ms;
+}
+
+.logo:hover {
+	color: #ccc;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.navigationLinks ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.navigationLinks a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin: 1rem;
+	transition: 500ms;
+}
+
+.navigationLinks a:hover {
+	color: #ccc;
+}
+
+.navbanavigationLinksrLinks a:hover {
+	color: #ccc;
+}
+
+.navigationLinks li {
+	padding-left: 1.5rem;
+}
+
+.navButton {
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.part1 {
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 20, 0.5), rgba(4, 9, 20, 0.5)),
+		url(images/Dave\ Chappelle\ smoke.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.standupHeroImg {
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(images/Dave\ Chappelle\ joke.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroImgText {
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heroImgText h1 {
+	text-align: left;
+	margin: 0;
+}
+
+.heroImgText p {
+	text-align: left;
+	width: 50%;
+}
+
+.part2 {
+	margin: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.part2 img {
+	border-radius: 5%;
+}
+
+.part2Left,
+.part2Center,
+.part2Right {
+	transition: 500ms;
+}
+
+.part2Left:hover,
+.part2Center:hover,
+.part2Right:hover {
+	transform: scale(1.03);
+}
+
+.imgText {
+	text-align: left;
+	margin: 1rem;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(148, 148, 148);
+}
+
+/*------------ Footer --------------*/
+
+footer {
+	padding: 15px;
+	bottom: 0;
+	background-color: black;
+	color: #ccc;
+	font-family: "Montserrat", sans-serif;
+}
+
+.footerLogo {
+	font-family: "Chopsic";
+	cursor: pointer;
+	transition: 500ms;
+	padding: 12px;
+	color: #ccc;
+}
+
+.footerLogo:hover {
+	color: white;
+}
+
+.footerContent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	padding: 10px 0 10px 0;
+}
+
+.footerContent a {
+	text-decoration: none;
+	color: #ccc;
+	transition: 300ms;
+}
+
+.footerContent a:hover {
+	color: white;
+}
+
+.footerLeft {
+	display: flex;
+	align-items: center;
+}
+
+.footerLeft ul li {
+	display: inline;
+	margin: 0 6px;
+}
+
+.footerRight ul li {
+	display: inline;
+	margin: 0 20px;
+}
+
+.footerRight ul {
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+
+.logo-navButton {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.closeButton {
+	display: none;
+}
+
+/*-------------	Movies ---------------*/
+
+h1 {
+	margin: 20px;
+	text-align: center;
+}
+
+.davesMovies {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.davesMovies figure {
+	width: 14em;
+	height: auto;
+}
+
+.movie {
+	transition: 500ms;
+}
+
+.movie:hover {
+	transform: scale(1.02);
+}
+
+/*---------	Stand ups-------------*/
+.standup1,
+.standupReverse,
+.standup3,
+.standupReverse {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+:is(.standup1, .standupReverse, .standup3, .standupReverse) img {
+	width: 600px;
+	height: auto;
+	border-radius: 5%;
+}
+
+.mainStandups figcaption {
+	text-align: center;
+}
+
+.mainStandups h2 {
+	text-align: center;
+}
+
+.standupsText p {
+	margin: 30px;
+}
+
+.chappellesShow {
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("https://hbomax-images.warnermediacdn.com/images/GX4SJngi5ACeIlgEAAAAS/tileburnedin?size=1280x720&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=1280");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.defComedy {
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("https://images-na.ssl-images-amazon.com/images/I/61eKYjcVrLL._RI_.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.crankYankers {
+	margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/4/45/Crank_Yankers.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

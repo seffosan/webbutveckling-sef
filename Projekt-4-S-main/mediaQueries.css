@@ -1,0 +1,110 @@
+@media screen and (max-width: 769px) {
+	/*--------------- Header -------------*/
+	.navigation {
+		flex-direction: column;
+	}
+
+	.navigationLinks {
+		display: none;
+		background-color: black;
+		width: 100%;
+	}
+
+	.navigationLinks.active {
+		display: unset;
+		background-color: black;
+		width: 100%;
+		z-index: 1000000000000;
+	}
+
+	.navigationLinks ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navButton {
+		display: flex;
+	}
+
+	.logo-navbutton {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	/*-------------	Standup ---------------*/
+
+	.standup1,
+	.standup3 {
+		flex-wrap: wrap-reverse;
+	}
+
+	.standupReverse {
+		flex-wrap: wrap;
+	}
+
+	.standupsText p {
+		margin: 0 5em 0 5em;
+	}
+
+	/*--------------- Main -------------*/
+
+	.part2 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+
+	/*--------------- footer -------------*/
+
+	.footerContent {
+		flex-direction: column-reverse;
+	}
+
+	.footerLeft {
+		flex-direction: column;
+	}
+
+	.footerLeft ul {
+		padding: 0;
+	}
+
+	.davesMovies {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.heroImgText h1 {
+		text-align: center;
+	}
+
+	.heroImgText p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footerLeft a {
+		display: block;
+	}
+
+	/*-------------	Standup ---------------*/
+
+	.standup1 img,
+	.standupReverse img,
+	.standup3 img,
+	.standupReverse img {
+		width: 300px;
+		height: auto;
+	}
+
+	.standupsText p {
+		margin: 0 3em 0 3em;
+	}
+}
